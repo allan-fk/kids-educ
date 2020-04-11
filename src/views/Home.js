@@ -7,10 +7,10 @@ const { Header, Footer, Content } = Layout;
 export default class Home extends Component {
   render() {
     return (
-      <Layout style={{ height: '600px' }}>
+      <Layout style={{ height: '800px' }}>
         <Header style={{ backgroundColor: 'red', paddingLeft: '270px' }}>Header</Header>
         <Layout style={{ backgroundColor: 'blue'}}>
-          <SideBar/>
+          <SideBar />
           <Content style={{ left: '270px', position: 'relative' }}>Content</Content>
         </Layout>
         <Footer>Footer</Footer>

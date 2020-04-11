@@ -1,0 +1,27 @@
+h1.ant-typography,
+.ant-typography h1 {
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: unset;
+}
+
+h2.ant-typography,
+.ant-typography h2 {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: unset;
+}
+
+h3.ant-typography,
+.ant-typography h3 {
+  font-weight: 900;
+  font-size: 14px;
+  margin-bottom: unset;
+}
+
+h4.ant-typography,
+.ant-typography h4 {
+  font-weight: 900;
+  font-size: 10px;
+  margin-bottom: unset;
+}
