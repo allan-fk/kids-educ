@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import { Layout } from 'antd';
 import  SideBar  from '../components/SideBar';
+import  Header  from '../components/Header';
 
-const { Header, Footer, Content } = Layout;
+const { Footer, Content } = Layout;
 
 export default class Home extends Component {
   render() {
     return (
       <Layout style={{ height: '800px' }}>
-        <Header style={{ backgroundColor: 'red', paddingLeft: '270px' }}>Header</Header>
+        <Header />
         <Layout style={{ backgroundColor: 'blue'}}>
           <SideBar />
           <Content style={{ left: '270px', position: 'relative' }}>Content</Content>
