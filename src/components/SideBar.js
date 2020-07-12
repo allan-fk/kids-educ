@@ -61,7 +61,7 @@ const SideBarMenu = styled.div`
       }
     }
 
-    li.main {
+    li.main-menu {
       a {
         font-weight: 600;
       }
@@ -79,9 +79,10 @@ const SideBarMenu = styled.div`
     }
   }
 
-  ul.team li{
+  ul.menu li{
     a {
-      font-weight: 600;
+      //font-weight: 600;
+      margin-top: 12px;
     }
 
     img {
@@ -113,7 +114,7 @@ export default class SideBarLeft extends Component {
               Principal
             </h4>
             <ul>
-              <li className='main'>
+              <li className='main-menu'>
                 <div>
                   <img src={'https://image.flaticon.com/icons/svg/2313/2313110.svg'} alt="Logo" />
                 </div>
@@ -147,48 +148,45 @@ export default class SideBarLeft extends Component {
           </SideBarMenu>
           <SideBarMenu>
             <h4>
-              Equipe
+              Equipes
             </h4>
-            <ul className='team'>
+            <ul className='menu'>
               <li>
                 <div>
                   <img src={'https://picsum.photos/200/300'} alt="Logo" />
                 </div>
-                <a>Dashboard</a>
+                <a>Team apres-midi</a>
               </li>
               <li>
                 <div>
                   <img src={'https://picsum.photos/200/300'} alt="Logo" />
                 </div>
-                <a>Messages</a>
+                <a>Famille</a>
               </li>
               <li>
                 <div>
                   <img src={'https://picsum.photos/200/300'} alt="Logo" />
                 </div>
-                <a>Journal</a>
+                <a>Ecole</a>
               </li>
             </ul>
           </SideBarMenu>
           <SideBarMenu>
-            <p>
-              Principal
-              </p>
-            <ul>
+          <h4>
+              Enfants
+            </h4>
+            <ul className='menu'>
               <li>
-                <a>Dashboard</a>
+                <div>
+                  <img src={'https://picsum.photos/200/300'} alt="Logo" />
+                </div>
+                <a>Julie</a>
               </li>
               <li>
-                <a>Dashboard</a>
-              </li>
-              <li>
-                <a>Dashboard</a>
-              </li>
-              <li>
-                <a>Dashboard</a>
-              </li>
-              <li>
-                <a>Dashboard</a>
+                <div>
+                  <img src={'https://picsum.photos/200/300'} alt="Logo" />
+                </div>
+                <a>Lou</a>
               </li>
             </ul>
           </SideBarMenu>
