@@ -1,43 +1,31 @@
 import React, { Component } from 'react'
 import { Layout, Input, Button, Row, Col } from 'antd';
 import { SearchOutlined, PlusCircleFilled, CalendarOutlined } from '@ant-design/icons';
-import styled from 'styled-components'
-import * as palette from '../Variables'
 
-const { Header } = Layout;
 
-/*const SideBar = styled(Sider)`
-  background-color: white;
-  width: 250px !important;
-  max-width: unset !important;
-  position: absolute; 
-  top: 0px;
-  border-radius: 20px;
-  padding: 20px 0;
-`
-*/
-const SideBarContainer = styled.div`
-  width: fit-content;
-  margin: auto;
-`
-
-export default class SideBarLeft extends Component {
+export default class Header extends Component {
   render() {
     return (
-      <Header style={{
+      <Layout.Header style={{
         backgroundColor: '#f0f4fb',
         paddingLeft: '270px',
-        height: '400px',
+        height: '230px',
       }}>
         <Row>
-          <Col>
+          <Col span={24}>
             <Input
               size="large"
               placeholder="Rechercher"
               prefix={<SearchOutlined />}
               style={{ width: '300px', margin: '0 10px' }}
             />
-            <Button type="primary">
+            <Button type="primary"
+            style={{
+              float: 'right',
+              transform: 'translate(0,-50%)',
+              top: '50%',
+            }}
+            >
               <PlusCircleFilled />
           Activite
         </Button>
@@ -45,6 +33,7 @@ export default class SideBarLeft extends Component {
         </Row>
         <Row>
           <Col
+          span={24}
             style={{
               backgroundColor: 'white',
               width: '100vh',
@@ -93,7 +82,7 @@ export default class SideBarLeft extends Component {
             </Row>
           </Col>
         </Row>
-      </Header>
+      </Layout.Header>
     )
   }
 }
